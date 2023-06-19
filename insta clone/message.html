@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+    <style>
+		body {
+			background-image: url("https://i.pinimg.com/originals/bf/0c/e1/bf0ce12b9d376430136a06f845bcc5b5.jpg");
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+	</style>
+</head>
+
+<body>
+    <h1>Inbox</h1>
+
+    <form id="entryForm">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="To" required placeholder="Name"><br><br>
+        <label for="message"><b>Message:</b></label> <br>
+        <textarea id="message" rows="20" cols="60" placeholder="Enter Text"></textarea><br><br>
+
+        <button type="submit"><b>Submit</b></button>
+        <button type="button" onclick="clearForm()"><b>Clear</b></button>
+        <div id="date"></div>
+        
+<script>
+    var a = Date()
+    document.getElementById("date").innerHTML = a;
+</script>
+</form>
+
+</body>
+
+</html>
